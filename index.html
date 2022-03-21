@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Srisakdi&display=swap');
+        body{
+            font-family: 'Srisakdi', cursive;
+            font-size:x-large
+        }
+        </style>
+    <title>ทิศ ฝัง รก บุตร์</title>
+</head>
+<body>
+    <br><br><br><br><br><br>
+    <center>
+    <h1>ทิศ ฝัง รก บุตร์</h1>
+
+   คลอด บุตร์ ใน เดือน : <input type="number" id="x" style="width:70px;height:25px"> 
+    
+  => <button class="cal" onsubmit="cal()" style="font-size:18px">ทำนาย</button>
+    <br><br><hr>
+    
+    <div id="text"></div>
+<p></p>
+
+    </center>
+    <script>
+        function cal() {
+            result =   x.value
+if (result == 4 || result == 5 || result == 6){
+document.getElementById('text').innerHTML= "<address>• สิทธิการิย</address> <b>ท่าน ให้ เอา รก ไป ฝัง ทิศ อุดร คือ ทิศ เหนือ ดี นัก</b>" 
+} else if (result == 7 || result == 8 || result == 9){
+document.getElementById('text').innerHTML= "<address>• สิทธิการิย</address> <b>ให้ ฝัง ทิศอุดร ฤา พายัพ คือ ทิศเหนือแล ตวันตกเฉียง เหนือ ดี นัก ท่าน ห้าม มิ ให้ ฝัง ทิศ ตวัน ออก จะ ตาย แล</b>"  
+} else if (result == 10 || result == 11 || result == 12){
+document.getElementById('text').innerHTML= "<address>• สิทธิการิย</address> <b>ให้ ฝัง ทิศ ทักษิณ ฤา อิสาณ คือ ทิศ ใต้ แล ทิศ ตวัน ออก เฉียง เหนือ ดี นัก จะ ได้ บริวาร มาก</b>"  
+} else if (result == 1 || result == 2 || result == 3){
+document.getElementById('text').innerHTML= "<address>• สิทธิการิย</address> <b>ให้ ฝัง ทิศ ทักษิณ ฤา หรดี คือ ทิศ ใต้ แล ทิศ ตวัน ตก เฉียง ใต้ อายุ เด็ก นั้น จะยืน นาน แล</b>"  
+}
+
+
+}
+document.querySelector('.cal').addEventListener("click", ()=>cal());
+    </script>
+</body>
+</html>
